@@ -15,7 +15,8 @@ const CTASection = () => {
             Únete a la revolución agrícola y descubre cómo la tecnología puede llevar tu producción al siguiente nivel.
           </p>
           
-          <Link to="/contacto">
+          <div className="pt-8">
+            <Link to="/contacto">
             <Button
               size="lg"
               className="bg-background text-primary hover:bg-background/90 px-10 py-6 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
@@ -24,6 +25,7 @@ const CTASection = () => {
               Contáctanos Ahora
             </Button>
           </Link>
+          </div>
         </div>
       </div>
     </section>
