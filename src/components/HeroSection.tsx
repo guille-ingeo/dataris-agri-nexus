@@ -32,9 +32,14 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <p className="text-3xl md:text-5xl font-bold text-foreground tracking-wide">
-            TODO CONECTADO
-          </p>
+          <div className="space-y-3">
+            <p className="text-3xl md:text-5xl font-bold text-foreground tracking-wide">
+              ECOSISTEMA DE APLICACIONES
+            </p>
+            <p className="text-lg md:text-xl text-muted-foreground">
+              Todo lo que necesitas en un mismo lugar
+            </p>
+          </div>
           
           <div className="pt-8">
             <Link to="/contacto">
