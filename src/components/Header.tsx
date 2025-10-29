@@ -18,7 +18,7 @@ const Header = () => {
             </Link>
           </div>
           
-          <Link to="/contacto">
+          <a href="https://wa.me/34603465774" target="_blank" rel="noopener noreferrer">
             <Button
               size="sm"
               className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
@@ -26,7 +26,7 @@ const Header = () => {
               <MessageCircle className="mr-2 h-4 w-4" />
               Contáctanos
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
     </header>

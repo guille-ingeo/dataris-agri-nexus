@@ -15,7 +15,7 @@ const CTASection = () => {
             Únete a la revolución agrícola y descubre cómo la tecnología puede llevar tu producción al siguiente nivel.
           </p>
           
-          <Link to="/contacto">
+          <a href="https://wa.me/34603465774" target="_blank" rel="noopener noreferrer">
             <Button
               size="lg"
               className="bg-background text-primary hover:bg-background/90 px-10 py-6 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
@@ -23,7 +23,7 @@ const CTASection = () => {
               <MessageCircle className="mr-2 h-5 w-5" />
               Contáctanos Ahora
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
