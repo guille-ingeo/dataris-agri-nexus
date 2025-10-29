@@ -1,5 +1,5 @@
 import logoLanzadera from "@/assets/logo-lanzadera.png";
-import logoGraniot from "@/assets/logo-graniot.png";
+import logoGraniot from "@/assets/logo-graniot-png.png";
 
 const AccelerationSection = () => {
   return (
