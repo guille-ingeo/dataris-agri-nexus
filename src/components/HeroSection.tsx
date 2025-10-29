@@ -42,15 +42,15 @@ const HeroSection = () => {
           </div>
           
           <div className="pt-8">
-          <a href="https://wa.me/34603465774" target="_blank" rel="noopener noreferrer">
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-            >
-              <MessageCircle className="mr-2 h-5 w-5" />
-              Contáctanos por WhatsApp
-            </Button>
-          </a>
+            <Link to="/contacto">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Contáctanos por WhatsApp
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
