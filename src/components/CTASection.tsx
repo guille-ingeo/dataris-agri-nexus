@@ -15,7 +15,7 @@ const CTASection = () => {
             Únete a la revolución agrícola y descubre cómo la tecnología puede llevar tu producción al siguiente nivel.
           </p>
           
-          <div className="pt-8">
+          <div className="pt-4">
             <Link to="/contacto">
             <Button
               size="lg"
