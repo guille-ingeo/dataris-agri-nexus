@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import heroImage from "@/assets/hero-agriculture.jpg";
+import heroImage from "@/assets/hero-tech-agriculture.jpg";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
