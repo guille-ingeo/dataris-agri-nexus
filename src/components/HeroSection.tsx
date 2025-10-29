@@ -2,23 +2,17 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-tech-agriculture.jpg";
 import { Link } from "react-router-dom";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-subtle pt-20">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-subtle pt-20">
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Agricultura conectada" 
-          className="w-full h-full object-cover opacity-20"
-        />
+        <img src={heroImage} alt="Agricultura conectada" className="w-full h-full object-cover opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background"></div>
       </div>
       
       <div className="container relative z-10 px-6 py-20 mx-auto text-center animate-fade-in">
         <div className="max-w-5xl mx-auto space-y-8">
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight">
+            <h1 className="text-5xl lg:text-8xl font-black tracking-tight md:text-6xl">
               EL FUTURO DE LA
               <span className="block bg-gradient-hero bg-clip-text text-transparent">
                 AGRICULTURA
@@ -33,7 +27,7 @@ const HeroSection = () => {
           </div>
           
           <div className="space-y-3">
-            <p className="text-3xl md:text-5xl font-bold text-foreground tracking-wide">
+            <p className="text-3xl text-foreground tracking-wide md:text-4xl font-medium">
               ECOSISTEMA DE APLICACIONES
             </p>
             <p className="text-lg md:text-xl text-muted-foreground">
@@ -43,10 +37,7 @@ const HeroSection = () => {
           
           <div className="pt-8">
             <Link to="/contacto">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-              >
+              <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Contáctanos
               </Button>
@@ -60,8 +51,6 @@ const HeroSection = () => {
           <div className="w-1.5 h-3 bg-primary rounded-full"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
