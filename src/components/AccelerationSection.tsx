@@ -10,19 +10,19 @@ const AccelerationSection = () => {
             Startup acelerada e impulsada por
           </p>
           
-          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20">
-            <div className="flex items-center justify-center hover:scale-105 transition-transform duration-300">
+          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16">
+            <div className="w-48 h-24 flex items-center justify-center hover:scale-105 transition-transform duration-300">
               <img 
                 src={logoLanzadera} 
                 alt="Lanzadera" 
-                className="h-16 md:h-20 w-auto object-contain"
+                className="max-h-20 w-auto object-contain"
               />
             </div>
-            <div className="flex items-center justify-center hover:scale-105 transition-transform duration-300">
+            <div className="w-48 h-24 flex items-center justify-center hover:scale-105 transition-transform duration-300">
               <img 
                 src={logoGraniot} 
                 alt="Graniot - Satellite Monitoring Insights" 
-                className="h-20 md:h-24 w-auto object-contain"
+                className="max-h-20 w-auto object-contain"
               />
             </div>
           </div>
