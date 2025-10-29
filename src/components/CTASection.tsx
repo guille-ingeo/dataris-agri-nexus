@@ -1,11 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CTASection = () => {
-  const whatsappNumber = "1234567890"; // Replace with actual WhatsApp number
-  const whatsappMessage = encodeURIComponent("Hola, quiero saber más sobre Dataris y cómo puede ayudarme");
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-
   return (
     <section className="py-24 px-6 bg-gradient-hero">
       <div className="container mx-auto text-center">
@@ -18,14 +15,15 @@ const CTASection = () => {
             Únete a la revolución agrícola y descubre cómo la tecnología puede llevar tu producción al siguiente nivel.
           </p>
           
-          <Button
-            size="lg"
-            onClick={() => window.open(whatsappUrl, "_blank")}
-            className="bg-background text-primary hover:bg-background/90 px-10 py-6 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
-          >
-            <MessageCircle className="mr-2 h-5 w-5" />
-            Contáctanos Ahora
-          </Button>
+          <Link to="/contacto">
+            <Button
+              size="lg"
+              className="bg-background text-primary hover:bg-background/90 px-10 py-6 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
+            >
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Contáctanos Ahora
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

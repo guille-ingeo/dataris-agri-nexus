@@ -1,12 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-agriculture.jpg";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
-  const whatsappNumber = "1234567890"; // Replace with actual WhatsApp number
-  const whatsappMessage = encodeURIComponent("Hola, me interesa conocer más sobre Dataris");
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-subtle pt-20">
       <div className="absolute inset-0 z-0">
@@ -40,14 +37,15 @@ const HeroSection = () => {
           </p>
           
           <div className="pt-8">
-            <Button
-              size="lg"
-              onClick={() => window.open(whatsappUrl, "_blank")}
-              className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-            >
-              <MessageCircle className="mr-2 h-5 w-5" />
-              Contáctanos por WhatsApp
-            </Button>
+            <Link to="/contacto">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Contáctanos por WhatsApp
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
