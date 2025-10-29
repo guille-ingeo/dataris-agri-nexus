@@ -20,7 +20,7 @@ const HeroSection = () => {
             </h1>
             
             <div className="inline-block px-8 py-3 bg-primary/10 rounded-full">
-              <p className="text-xl md:text-2xl font-bold text-primary tracking-wider">
+              <p className="text-xl text-primary tracking-wider md:text-xl font-bold">
                 MUY PRONTO
               </p>
             </div>
