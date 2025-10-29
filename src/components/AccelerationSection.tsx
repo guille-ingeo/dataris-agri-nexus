@@ -1,3 +1,6 @@
+import logoLanzadera from "@/assets/logo-lanzadera.png";
+import logoGraniot from "@/assets/logo-graniot.png";
+
 const AccelerationSection = () => {
   return (
     <section className="py-20 px-6 bg-secondary/30">
@@ -7,13 +10,20 @@ const AccelerationSection = () => {
             Startup acelerada e impulsada por
           </p>
           
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
-            {/* Placeholder for logos - replace with actual logos */}
-            <div className="w-48 h-24 bg-card border-2 border-border rounded-xl flex items-center justify-center hover:shadow-lg transition-shadow duration-300">
-              <span className="text-sm font-medium text-muted-foreground">Logo 1</span>
+          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20">
+            <div className="flex items-center justify-center hover:scale-105 transition-transform duration-300">
+              <img 
+                src={logoLanzadera} 
+                alt="Lanzadera" 
+                className="h-16 md:h-20 w-auto object-contain"
+              />
             </div>
-            <div className="w-48 h-24 bg-card border-2 border-border rounded-xl flex items-center justify-center hover:shadow-lg transition-shadow duration-300">
-              <span className="text-sm font-medium text-muted-foreground">Logo 2</span>
+            <div className="flex items-center justify-center hover:scale-105 transition-transform duration-300">
+              <img 
+                src={logoGraniot} 
+                alt="Graniot - Satellite Monitoring Insights" 
+                className="h-20 md:h-24 w-auto object-contain"
+              />
             </div>
           </div>
         </div>
